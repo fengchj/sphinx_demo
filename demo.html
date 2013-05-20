@@ -86,9 +86,11 @@
 <li><a class="reference internal" href="#field-lists" id="id44">字段列表(Field lists)</a></li>
 <li><a class="reference internal" href="#sidebar" id="id45">边栏(Sidebar)</a></li>
 <li><a class="reference internal" href="#admonitions" id="id46">箴言(Admonitions)</a></li>
-<li><a class="reference internal" href="#id20" id="id47">自动生成目录</a></li>
-<li><a class="reference internal" href="#id21" id="id48">锚点跳转</a></li>
-<li><a class="reference internal" href="#css" id="id49">CSS样式</a></li>
+<li><a class="reference internal" href="#substitution" id="id47">替代(Substitution)</a></li>
+<li><a class="reference internal" href="#html" id="id48">内嵌HTML</a></li>
+<li><a class="reference internal" href="#id20" id="id49">自动生成目录</a></li>
+<li><a class="reference internal" href="#id21" id="id50">锚点跳转</a></li>
+<li><a class="reference internal" href="#css" id="id51">CSS样式</a></li>
 </ul>
 </li>
 </ul>
@@ -657,8 +659,23 @@ crunchy, now would it?</td>
 <p class="last">箴言内容</p>
 </div>
 </div>
+<div class="section" id="substitution">
+<h2><a class="toc-backref" href="#id47">替代(Substitution)</a><a class="headerlink" href="#substitution" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python"><pre>.. |ball| image:: images/ball1.gif
+
+|ball| |ball|</pre>
+</div>
+<p><img alt="ball" src="_images/ball1.gif" /> <img alt="ball" src="_images/ball1.gif" /></p>
+</div>
+<div class="section" id="html">
+<h2><a class="toc-backref" href="#id48">内嵌HTML</a><a class="headerlink" href="#html" title="永久链接至标题">¶</a></h2>
+<div class="highlight-python"><pre>.. raw:: html
+
+    &lt;p&gt;段落，&lt;a href="http://example.com"&gt;链接&lt;/a&gt;&lt;/p&gt;</pre>
+</div>
+<p>段落，<a href="http://example.com">链接</a></p></div>
 <div class="section" id="id20">
-<h2><a class="toc-backref" href="#id47">自动生成目录</a><a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h2>
+<h2><a class="toc-backref" href="#id49">自动生成目录</a><a class="headerlink" href="#id20" title="永久链接至标题">¶</a></h2>
 <p>在<cite>index.rst</cite>里添加类似下面的内容，生成的HTML及PDF会自动生成目录:</p>
 <div class="highlight-python"><pre>.. toctree::
    :maxdepth: 2
@@ -673,7 +690,7 @@ crunchy, now would it?</td>
 <p>来插入本章节的目录。</p>
 </div>
 <div class="section" id="id21">
-<h2><a class="toc-backref" href="#id48">锚点跳转</a><a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h2>
+<h2><a class="toc-backref" href="#id50">锚点跳转</a><a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h2>
 <p>标题会自动生成锚点，也可以手工创建:</p>
 <div class="highlight-python"><pre>.. _custom_id:
 
@@ -685,7 +702,7 @@ crunchy, now would it?</td>
 <p><a class="reference internal" href="#custom-id"><em>引用</em></a></p>
 </div>
 <div class="section" id="css">
-<h2><a class="toc-backref" href="#id49">CSS样式</a><a class="headerlink" href="#css" title="永久链接至标题">¶</a></h2>
+<h2><a class="toc-backref" href="#id51">CSS样式</a><a class="headerlink" href="#css" title="永久链接至标题">¶</a></h2>
 <p>创建<cite>source/_static/default.css</cite>就可以覆盖内置的样式</p>
 <table class="docutils footnote" frame="void" id="id22" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
@@ -720,6 +737,8 @@ crunchy, now would it?</td>
 <li class="toctree-l2"><a class="reference internal" href="#field-lists">字段列表(Field lists)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sidebar">边栏(Sidebar)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#admonitions">箴言(Admonitions)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#substitution">替代(Substitution)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#html">内嵌HTML</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id20">自动生成目录</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id21">锚点跳转</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#css">CSS样式</a></li>
