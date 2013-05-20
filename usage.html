@@ -106,7 +106,9 @@ demo</pre>
 <div class="highlight-python"><pre>$ cd sphinx_demo
 $ make livehtml</pre>
 </div>
-<p>Livereload会自动调用浏览器打开生成的HTML文档，使用任意编辑器编辑<cite>.rst</cite>文件，保存时，Livereload会自动更新HTML文档，并刷新浏览器。</p>
+<p>Livereload会自动调用浏览器打开生成的HTML文档，使用任意编辑器编辑<cite>.rst</cite>文件，保存时，Livereload会自动更新HTML文档，并刷新浏览器，保留页面位置。</p>
+<p>Livereload只负责更新HTML和刷新浏览器，并不能自动打开对应页面，编辑前需要先手工定位浏览器到对应的页面位置。</p>
+<p>另外注意，浏览器URL里有锚点的话，刷新页面时一定会跳到这一锚点上。</p>
 <div class="admonition note">
 <p class="first admonition-title">注解</p>
 <p class="last">Livereload默认使用8000端口，如果已经占用，编辑<cite>Makefile</cite>和<cite>make.bat</cite>更改。</p>
