@@ -1,0 +1,22 @@
+reStructuredText & Sphinx
+=========================
+
+reStructuredText
+----------------
+
+An easy-to-read, what-you-see-is-what-you-get plaintext markup syntax and parser system.
+
+* In-line program documentation
+* Creating standalone documents
+
+实时预览
+^^^^^^^^
+
+`livereload <https://github.com/lepture/python-livereload>`_
+
+命令行工具配合浏览器插件，监视源文件变动，自动刷新浏览器
+
+编辑器
+^^^^^^
+
+中文宽度是英文两倍，等宽
