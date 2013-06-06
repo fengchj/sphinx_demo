@@ -120,6 +120,7 @@ $ make livehtml</pre>
 <li>编辑<cite>.rst</cite>时注意使用空格，不要用制表符、中文空格。</li>
 <li>用锚点来引用章节，不要用章节数字编号。</li>
 <li>不要手工给列表、章节添加数字标号，Sphix能自动编号。列表可用<tt class="docutils literal"><span class="pre">#.</span></tt>，章节可给<tt class="docutils literal"><span class="pre">..</span> <span class="pre">toctree::</span></tt>添加<tt class="docutils literal"><span class="pre">:numbered:</span></tt>属性。</li>
+<li>如果Sphinx出现奇怪的行为(修改样式不生效、自动编号不正确等)，可以尝试先清除缓存(运行<tt class="docutils literal"><span class="pre">make</span> <span class="pre">clean</span></tt>，或者删除<cite>build</cite>目录)，再重新生成目标文件。</li>
 </ul>
 </div>
 <div class="section" id="id6">
