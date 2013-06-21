@@ -686,6 +686,7 @@ crunchy, now would it?</td>
 <h2><a class="toc-backref" href="#id50">3.16. 自动生成目录</a><a class="headerlink" href="#id21" title="永久链接至标题">¶</a></h2>
 <p>在<cite>index.rst</cite>里添加类似下面的内容，生成的HTML及PDF会自动生成目录:</p>
 <div class="highlight-python"><pre>.. toctree::
+   :numbered:
    :maxdepth: 2
 
    setup
@@ -693,7 +694,8 @@ crunchy, now would it?</td>
    demo</pre>
 </div>
 <p>章节里用:</p>
-<div class="highlight-python"><pre>.. contents::</pre>
+<div class="highlight-python"><pre>.. contents:: 本节内容
+   :local:</pre>
 </div>
 <p>来插入本章节的目录。</p>
 </div>
